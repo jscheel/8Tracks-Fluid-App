@@ -1,1 +1,6 @@
 This is the userscript for my 8tracks.com fluid app. To recreate, purchase Fluid App at http://fluidapp.com/ and create an app for http://m.8tracks.com. Copy script.js and paste it into a new userscript on your app.
+
+TODO
+========================================================================
+  - add icon to growl notification that pulls in image if SFW
+  - add drawer pane that can show additional info or act as a remote?
