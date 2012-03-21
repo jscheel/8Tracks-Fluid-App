@@ -2,7 +2,6 @@ $.ajaxSetup({
   converters: {
     "text json": function(textValue) {
       data = jQuery.parseJSON(textValue);
-      console.log(data);
       if (data.hasOwnProperty('mix')) {
         if (data.mix.nsfw) {
           for (var key in data.mix.cover_urls) {
