@@ -1,5 +1,7 @@
 This is the userscript for my 8tracks.com fluid app. To recreate, purchase Fluid App at http://fluidapp.com/ and create an app for http://m.8tracks.com. Copy script.js and paste it into a new userscript on your app.
 
+I automatically strip out nsfw album covers. If you don't like this behavior, just remove the $.ajaxSetup() call at the beginning of the script.
+
 TODO
 ========================================================================
   - add drawer pane that can show additional info or act as a remote?
