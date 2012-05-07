@@ -2,6 +2,8 @@ This is the userscript for my 8tracks.com fluid app. To recreate, purchase Fluid
 
 I automatically strip out nsfw album covers. If you don't like this behavior, just remove the $.ajaxSetup() call at the beginning of the script.
 
+All of my track-starring functionality has been removed. The new version of the mobile interface finally has this built in, yay!
+
 TODO
 ========================================================================
   - add drawer pane that can show additional info or act as a remote?
