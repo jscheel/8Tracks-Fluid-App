@@ -32,5 +32,13 @@ $(document).bind('E8tracksPlayer-play', function () {
       priority: 2,
       sticky: false
     });
+    E8tracksMobileUI.player.getSoundManager().setVolume(parseInt($('#volume-slider')[0].value, 10));
   }
+});
+
+$(document).ready(function() {
+  $('head').append('<style type="text/css">#volume-slider {position: absolute; width: 100px; height: 1px; padding: 0; margin: 0; top: 85px; left: 10px; -webkit-appearance: none !important; border: none; background: rgba(100, 100, 100, 0.746094);} #volume-slider::-webkit-slider-thumb {-webkit-appearance: none !important; background: #ddd; height: 10px; width: 10px; cursor: pointer !important; border-radius: 10px;}</style>');
+  $('<input id="volume-slider" type="range" min="0" max="100" />').appendTo('#mixPage .player .player_controls').change(function(){
+    E8tracksMobileUI.player.getSoundManager().setVolume(parseInt(this.value, 10));
+  });
 });
